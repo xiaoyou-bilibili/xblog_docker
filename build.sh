@@ -1,1 +1,4 @@
-# 自动构建docker镜像
+# 先下载xblog的镜像
+git clone http://gitea.xiaoyou.com/xiaoyou/xblog.git
+
+
