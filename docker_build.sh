@@ -56,4 +56,5 @@ sudo docker run -itd --add-host=host.docker.internal:host-gateway \
 -v /www/wwwroot/xblog/configs:/var/www/html/configs \
 -v /www/wwwroot/xblog/plugins:/var/www/html/plugins \
 -v /www/wwwroot/xblog/themes:/var/www/html/themes \
+-v /www/wwwroot/xblog/upload:/var/www/html/upload \
 -p 2334:80 -e xblog_host="http://xblog.xiaoyou.com" --name xblog xblog 

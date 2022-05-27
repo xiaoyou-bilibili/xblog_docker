@@ -9,3 +9,5 @@ COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 # 运行命令
 CMD [ "sh", "./startup.sh" ]
+# 健康检查
+HEALTHCHECK --timeout=10s CMD curl --silent --fail http://127.0.0.1/fpm-ping
